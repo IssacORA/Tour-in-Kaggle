@@ -1,2 +1,2 @@
 # Tour-in-Kaggle
-Excellent namer
+Name told everything.
