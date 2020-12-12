@@ -31,4 +31,11 @@
         4.3   把类别特征转换为特征值表示的特征，如客舱等级->特征向量
 
 >如果要对测试集和训练集的所有信息放在一起统计，用append把两个DataFrame合成一个，如果只是一致地进行特征修正、删除，只需要放在一个list里再遍历
+>现在要去掉部分不起作用的特征
+
+    train_data=train_data.drop(['Ticket','Cabin'],axis=1)
+    test_data=test_data.drop(['Ticket','Cabin'],axis=1)
+    
+>axis不设为1是不行的
+>Dataframe对象中的列名可以作为属性直接调用，这样调用出来的是Series对象
 
